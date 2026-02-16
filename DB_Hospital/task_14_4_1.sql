@@ -1,0 +1,7 @@
+SELECT TOP 1000 * FROM Doctors;
+SELECT TOP 1000 * FROM Wards;
+SELECT TOP 1000 * FROM Departments;
+SELECT TOP 1000 * FROM Examinations;
+SELECT TOP 1000 * FROM Sponsors;
+SELECT TOP 1000 * FROM Donations;
+SELECT TOP 1000 * FROM DoctorsExaminations;

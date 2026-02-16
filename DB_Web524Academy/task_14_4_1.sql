@@ -1,0 +1,2 @@
+SELECT TOP 1000 * FROM Students;
+SELECT TOP 1000 * FROM Product;

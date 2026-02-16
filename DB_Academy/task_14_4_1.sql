@@ -1,0 +1,7 @@
+SELECT TOP 1000 * FROM Students;
+SELECT TOP 1000 * FROM Groups;
+SELECT TOP 1000 * FROM Teachers;
+SELECT TOP 1000 * FROM Subjects;
+SELECT TOP 1000 * FROM Departments;
+SELECT TOP 1000 * FROM Achievements;
+SELECT TOP 1000 * FROM TeachersSubjects;
