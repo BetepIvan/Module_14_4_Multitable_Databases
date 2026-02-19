@@ -1,0 +1,374 @@
+{
+  "timestamp": "2026-02-19T20:24:56.652063",
+  "database": "Hospital",
+  "total_queries": 13,
+  "total_records": 207,
+  "results": {
+    "1.1 EXISTS: Врачи с обследованиями": [
+      {
+        "Id": 1,
+        "Surname": "Иванов",
+        "Name": "Иван"
+      },
+      {
+        "Id": 2,
+        "Surname": "Петров",
+        "Name": "Петр"
+      },
+      {
+        "Id": 3,
+        "Surname": "Сидоров",
+        "Name": "Сидор"
+      },
+      {
+        "Id": 4,
+        "Surname": "Козлова",
+        "Name": "Елена"
+      },
+      {
+        "Id": 5,
+        "Surname": "Морозов",
+        "Name": "Алексей"
+      },
+      {
+        "Id": 6,
+        "Surname": "Волкова",
+        "Name": "Ольга"
+      },
+      {
+        "Id": 7,
+        "Surname": "Соколов",
+        "Name": "Дмитрий"
+      },
+      {
+        "Id": 8,
+        "Surname": "Кузнецова",
+        "Name": "Анна"
+      },
+      {
+        "Id": 9,
+        "Surname": "Новиков",
+        "Name": "Павел"
+      },
+      {
+        "Id": 10,
+        "Surname": "Федорова",
+        "Name": "Мария"
+      }
+    ],
+    "1.2 EXISTS: Отделения с палатами > 3 мест": [
+      {
+        "Id": 1,
+        "DepartmentName": "Кардиология",
+        "Building": 1
+      },
+      {
+        "Id": 2,
+        "DepartmentName": "Неврология",
+        "Building": 1
+      },
+      {
+        "Id": 3,
+        "DepartmentName": "Хирургия",
+        "Building": 2
+      },
+      {
+        "Id": 4,
+        "DepartmentName": "Терапия",
+        "Building": 2
+      },
+      {
+        "Id": 6,
+        "DepartmentName": "Педиатрия",
+        "Building": 3
+      },
+      {
+        "Id": 8,
+        "DepartmentName": "Урология",
+        "Building": 4
+      },
+      {
+        "Id": 9,
+        "DepartmentName": "Травматология",
+        "Building": 5
+      }
+    ],
+    "2.1 ANY: Зарплата больше любого с премией > 5000": [
+      {
+        "Surname": "Сидоров",
+        "Name": "Сидор",
+        "Salary": 60000.0
+      },
+      {
+        "Surname": "Морозов",
+        "Name": "Алексей",
+        "Salary": 58000.0
+      },
+      {
+        "Surname": "Соколов",
+        "Name": "Дмитрий",
+        "Salary": 61000.0
+      }
+    ],
+    "2.2 SOME: Палаты с местами больше некоторых из отделения 1": [
+      {
+        "Name": "Кардиология-1",
+        "Places": 4
+      },
+      {
+        "Name": "Неврология-1",
+        "Places": 4
+      },
+      {
+        "Name": "Хирургия-1",
+        "Places": 5
+      },
+      {
+        "Name": "Хирургия-2",
+        "Places": 4
+      },
+      {
+        "Name": "Терапия-1",
+        "Places": 4
+      },
+      {
+        "Name": "Педиатрия-1",
+        "Places": 4
+      },
+      {
+        "Name": "Урология-1",
+        "Places": 4
+      },
+      {
+        "Name": "Травматология-1",
+        "Places": 4
+      }
+    ],
+    "3 ALL: Зарплата больше всех врачей на 'С'": [],
+    "4 Комбинация ANY и ALL": [
+      {
+        "Surname": "Иванов",
+        "Name": "Иван",
+        "Salary": 50000.0
+      },
+      {
+        "Surname": "Козлова",
+        "Name": "Елена",
+        "Salary": 52000.0
+      },
+      {
+        "Surname": "Волкова",
+        "Name": "Ольга",
+        "Salary": 53000.0
+      },
+      {
+        "Surname": "Федорова",
+        "Name": "Мария",
+        "Salary": 54000.0
+      }
+    ],
+    "5 UNION: Отделения и палаты": [
+      {
+        "Name": "Гинекология",
+        "Type": "Department"
+      },
+      {
+        "Name": "Кардиология",
+        "Type": "Department"
+      },
+      {
+        "Name": "Неврология",
+        "Type": "Department"
+      },
+      {
+        "Name": "Онкология",
+        "Type": "Department"
+      },
+      {
+        "Name": "Педиатрия",
+        "Type": "Department"
+      },
+      {
+        "Name": "Реанимация",
+        "Type": "Department"
+      },
+      {
+        "Name": "Терапия",
+        "Type": "Department"
+      },
+      {
+        "Name": "Травматология",
+        "Type": "Department"
+      },
+      {
+        "Name": "Урология",
+        "Type": "Department"
+      },
+      {
+        "Name": "Хирургия",
+        "Type": "Department"
+      },
+      {
+        "Name": "Гинекология-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Гинекология-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Кардиология-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Кардиология-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Неврология-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Неврология-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Онкология-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Онкология-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Педиатрия-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Педиатрия-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Реанимация-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Реанимация-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Терапия-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Терапия-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Травматология-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Травматология-2",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Урология-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Хирургия-1",
+        "Type": "Ward"
+      },
+      {
+        "Name": "Хирургия-2",
+        "Type": "Ward"
+      }
+    ],
+    "6 UNION ALL: Врачи и спонсоры": [
+      {
+        "FullName": "Иванов Иван",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Петров Петр",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Сидоров Сидор",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Козлова Елена",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Морозов Алексей",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Волкова Ольга",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Соколов Дмитрий",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Кузнецова Анна",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Новиков Павел",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Федорова Мария",
+        "Type": "Doctor"
+      },
+      {
+        "FullName": "Благотворительный фонд Помощь",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Инвестиции в Медицину",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Корпорация Здоровье",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Медицинский Альянс",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Медицинское Общество",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Страховая компания Медицина",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Фармацевтика Плюс",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Фармацевтический завод",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Фонд Здоровье",
+        "Type": "Sponsor"
+      },
+      {
+        "FullName": "Фонд Развития Больниц",
+        "Type": "Sponsor"
+      }
+    ],
+    "7.1 INNER JOIN: Врачи и их обследования": [
+      {
+        "Doctor": "Волкова",
+        "Examination": "УЗИ сердца",
+        "StartTime": 
